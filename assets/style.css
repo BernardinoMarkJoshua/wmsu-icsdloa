@@ -1,0 +1,819 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    color: rgb(79, 79, 79) ;
+}
+
+body {
+    background: rgb(249, 249, 255);
+}
+
+a {
+    cursor: pointer;
+}
+
+.achiever_display {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop-down-search {
+    margin-top: 10px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.primary-txt {
+    width: 150px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+.secondary-btn {
+    background: rgb(50, 36, 203);
+    border: 1px solid rgb(50, 36, 203);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.save-btn {
+    background: rgb(3, 70, 3);
+    border: 1px solid rgb(3, 70, 3);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 30px;
+    width: 70px;
+}
+
+.primary-btn {
+    background: rgb(3, 70, 3);
+    border: 1px solid rgb(3, 70, 3);
+    padding: 2px;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+}
+
+.primary-link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(3, 70, 3);
+    border: 1px solid rgb(3, 70, 3);
+    padding: 2px;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+}
+
+.primary-btn , .decline-btn , .blue-btn, .save-btn ,.search-btn, .secondary-btn  {
+    cursor: pointer;
+}
+
+
+.decline-btn {
+    background: rgb(239, 53, 39);
+    border: 1px solid rgb(239, 53, 39);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+}
+
+.blue-btn {
+    background: rgb(55, 55, 55);
+    border: 1px solid rgb(55, 55, 55);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+}
+
+.search-btn {
+    background: rgb(55, 55, 55);
+    border: 1px solid rgb(55, 55, 55);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    margin-top: 10px;
+}
+
+.link {
+    float: right;
+    text-decoration: none;
+    color: 	#0606c4;
+}
+
+.semester_info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.student_main_container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.side_panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    background: white;
+}
+
+.ics_dloa img {
+    height: 70px;
+    width: 70px;
+    margin-right: 5px;
+}
+
+.ics_dloa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(237, 237, 237);
+    width: 90%;
+    height: 100px;
+    background: rgb(249, 249, 249);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.name_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.name_container p{
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.navigation a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.main_screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+}
+
+.current_progress {
+    width: 80%;
+    height: 180px;
+    background: white;
+    margin-top: 20px;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.progress_bar span{
+    color: white;
+}
+
+.search_bar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 35rem;
+}
+
+.search_bar input{
+    margin-left: 10px;
+}
+
+.table_achievers1 {
+    border-collapse: collapse;
+    width: 50rem;
+    margin: 29px;
+    background: white;
+    margin-top: 10px;
+}
+
+.table_achievers1 td, th{
+    border: 1px solid rgb(0, 53, 0);
+    background: white;
+    text-align: left;
+    padding: 8px;
+}
+
+.table_achievers {
+    border-collapse: collapse;
+    width: 58rem;
+    margin: 29px;
+    background: white;
+    margin-top: 20px;
+}
+
+.table_achievers td, th{
+    border: 1px solid rgb(0, 53, 0);
+    text-align: left;
+    padding: 8px;
+}
+
+.table_achievers th{
+    color: white;
+    background: rgb(0, 53, 0);
+}
+
+.table_achievers tr:nth-child(even){
+        background-color: #dddddd;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.back_container {
+    width: 60%;
+    margin-top: 20px;
+}
+
+.back_container a{
+    float: right;
+    text-decoration: none;
+}
+
+.apply_form {
+    background: white;
+    padding: 20px;
+    border: 1px solid rgb(237, 237, 237);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.apply_form select{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.password_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 25rem;
+    height: 14rem;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 20px;
+    margin-top: 10rem;
+}
+
+.password_form input{
+    width: 20rem;
+    margin-top: 10px;
+}
+
+.faculty_container {
+    display: flex;
+    flex-direction: row;
+    height: 98vh;
+    margin: 5px;
+}
+
+.student-verify-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.student-verify-intro h1 {
+align-self: center;
+margin-bottom: 10px;
+}
+
+
+
+/* login css area  start*/
+
+@media only screen and (min-width: 1024px) {
+
+    .index-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .ics_home_logo {
+        width: 140px;
+        height: 140px;
+        margin-top: 30px;
+    }
+
+    .login-form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        height: 100vh;
+        background: rgb(249, 249, 255);
+    }
+    
+    .green-bar {
+        height: 5px;
+        width: 100%;
+        background: rgb(8, 74, 8);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    
+    .login-intro {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .login-form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20rem;
+        height: 40vh;
+        border: 1px solid rgb(239, 239, 239);
+        border-radius: 10px;
+        background: white;
+    }
+    
+    .right-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 65%;
+        color: #f7f7f7;
+        background: rgb(8, 74, 8);
+    }
+    
+    .logo-container {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .logo-container h1,
+    .logo-container h2,
+    .logo-container h3 {
+        color: white;
+    }
+    
+    .login-ics-logo {
+        width: 230px;
+        height: 230px;
+    }
+    
+    .unbold {
+        font-weight: 300;
+    }
+    
+    .login-text-field {
+        padding: 5px;
+        border: 1px solid rgb(194, 194, 194);
+        border-radius: 5px;
+        height: 30px;
+        width: 15rem;
+        margin-top: 20px;
+    }
+    
+    .login-sumbit {
+        border: none;
+        color: white;
+        font-weight: bold;
+        background-color: rgb(8, 74, 8);
+        border-radius: 5px;
+        height: 40px;
+        width: 100px;
+        margin-top: 20px;
+    }
+    
+    .register-container {
+        margin-top: 20px;
+        font-weight: lighter;
+        color: rgb(167, 158, 158);
+    }
+    
+    .register-link {
+        color: rgb(70, 70, 250);
+        text-decoration: none;
+        margin-left: 3px;
+    }
+
+    .icslogo-login-top, .br {
+        display: none;
+    }
+
+    .login-error-msg span{
+        color: red;
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 1023px) {
+
+    .icslogo-login-top {
+        height: 110px;
+        width: 110px;
+        transform: translate(4px, 50px);
+    }
+
+    .login-intro {
+        display: none;
+    }
+
+    .ics_home_logo {
+        display: none;
+    }
+
+    .index-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(249, 249, 255);
+    }
+
+    .login-form-container {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-container {
+        display: none;
+    }
+
+    .green-bar {
+        height: 5px;
+        width: 100%;
+        background: rgb(8, 74, 8);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    
+    .login-intro {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20rem;
+        height: 18rem;
+        border: 1px solid rgb(239, 239, 239);
+        border-radius: 10px;
+        background: white;
+    }
+
+    .login-text-field {
+        padding: 5px;
+        border: 1px solid rgb(194, 194, 194);
+        border-radius: 5px;
+        height: 30px;
+        width: 15rem;
+        margin-top: 20px;
+    }
+    
+    .login-sumbit {
+        border: none;
+        color: white;
+        font-weight: bold;
+        background-color: rgb(8, 74, 8);
+        border-radius: 5px;
+        height: 40px;
+        width: 100px;
+        margin-top: 20px;
+    }
+    
+    .register-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        font-weight: lighter;
+        color: rgb(167, 158, 158);
+    }
+    
+    .register-link {
+        color: rgb(70, 70, 250);
+        text-decoration: none;
+        margin-left: 3px;
+    }
+
+}
+
+/* login css area  end*/
+
+
+/* register */
+
+.faculty-register-main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.faculty-register-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.adviser-register {
+    display: flex;
+    flex-direction: row;
+}
+
+.information {
+    background: rgb(6, 97, 6);
+    color: white;
+    width: 20rem;
+    height: 35rem;
+    padding-left: 20px;
+}
+
+.cancel-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 2rem;
+    margin-top: 20px;
+    color: black;
+    border-radius: 20px;
+    background: whitesmoke;
+    text-decoration: none;
+}
+
+.information h2 {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.information p {
+    color: white;
+    font-weight: lighter;
+}
+
+.edit_misc_container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 40rem;
+    padding: 5%;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(201, 201, 201);
+}
+
+.edit_misc_container span{
+    margin-top: 15px;
+}
+
+.adviser-register-form {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgb(215, 215, 215);
+    border-right: 1px solid rgb(215, 215, 215);
+    border-bottom: 1px solid rgb(215, 215, 215);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 35rem;
+    width: 35rem;
+}
+
+.adviser-register-form input {
+    padding: 5px;
+    height: 30px;
+    width: 12rem;
+    margin-top: 10px;
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 5px;
+}
+
+.adviser-register-form select {
+    padding: 5px;
+    height: 40px;
+    width: 32rem;
+    margin-top: 10px;
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 5px;
+}
+
+.long-input input {
+    margin-top: 2rem;
+    width: 32rem;
+}
+
+.long-input {
+    margin-bottom: 1.5rem;
+}
+
+.name-reg-adviser input {
+    margin-top: 2rem;
+    width: 10rem;
+}
+
+.bottom-reg-adviser select {
+    margin-top: 2rem;
+    width: 10.8rem;
+}
+
+.top-reg-adviser input{
+    margin-top: 3rem;
+    width: 15.5rem;
+}
+
+.password-reg-adviser input {
+    margin-top: 2rem;
+    width: 15.5rem;
+}
+
+.register-btn-container input{
+    margin-top: 1.5rem;
+    color: white;
+    background: rgb(6, 97, 6);
+    height: 3rem;
+    width: 7rem;
+}
+
+.register-btn-container {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+.register_main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.register_form {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
+.register_form label{
+    font-weight: bold;
+}
+
+.register_form input {
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(203, 203, 203);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.register_form select {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(203, 203, 203);
+    margin-top: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+
+.register_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    height: 45rem;
+    background: white;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 10px;
+}
+
+
+.register_container h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.register-btn {
+    background: rgb(0, 74, 0);
+    border: none;
+    color: white;
+    margin-left: 18rem;
+    height: 80px;
+    width: 100px;
+}
+
+.verify_misto {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    height: 5rem;
+    background: white;
+    border-radius: 10px;
+}
+
+.verify_misto h1{
+    margin-right: 30px;
+}
+
+
+.verify_misto label{
+    font-weight: bold;
+}
+
+
+.verify_misto input{
+    height: 30px;
+    margin-left: 20px;
+    width: 150px;
+    padding: 5px;
+}
+
+.verify_btn{
+    background: rgb(0, 74, 0);
+    border: none;
+    color: white;
+    height: 80px;
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
